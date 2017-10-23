@@ -17,7 +17,9 @@ def string_parser string_array
   string_array.each do |str|
     final_array << str.scan(/\d+/).last.to_i
   end
+  final_array
 end
+
 
 describe "String Parser" do
   it 'can take a string and output the correct values' do
